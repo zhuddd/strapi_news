@@ -18,6 +18,7 @@ export default factories.createCoreController('api::information.information', ({
             sort: [{id: 'desc'}],
         }
         return await super.find(ctx);
+
     },
     async findOne(ctx) {
         ctx.query={
